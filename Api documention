@@ -1,0 +1,32 @@
+from renting api 
+Post  https://rentdepo.onrender.com/api/rooms/rent
+jeson 
+{
+  "floor": 4,
+  "room": 2,
+  "tenantName": "John Doe",
+  "startDate": "2024-02-24",
+  "endDate": "2024-05-24",
+  "price": 5500
+}
+
+for releasing 
+get https://rentdepo.onrender.com/api/rooms/release
+ jeson
+ {
+ "floor": 4 ,
+ "room": 2
+ }
+
+for monthy Report generater is 
+Post http://localhost:3002/api/reports/monthly 
+
+jeson 
+
+{
+"month":2;
+}
+ 
+ fro retriving the room 
+get https://rentdepo.onrender.com/api/rooms
+
